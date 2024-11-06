@@ -1,0 +1,351 @@
+body{
+    overflow-x: hidden;
+    background-color: rgb(233, 233, 233);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: none; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #DEDEDE; 
+}
+
+a, a:active, a:visited, a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: black;
+    border-bottom: 2px solid black;
+    background-color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+
+.sidenav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav ul li a, #m_reports, #m_warehouse{
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+}
+
+#m_reports:hover{
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+}
+
+.reports{
+    text-indent: 50px;
+    display: none;
+}
+
+#m_warehouse:hover{
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+}
+
+.warehouse{
+    text-indent: 50px;
+    display: none;
+}
+
+.sidenav ul li a:hover{
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.user_name{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 25px;
+    margin-right: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar-btn {
+    font-size: 30px;
+    cursor: pointer;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+
+.glyphicon-triangle-bottom{
+    font-size: 10px;
+}
+
+.glyphicon-triangle-top{
+    font-size: 10px;
+}
+
+.table-bordered tr th{
+    background-color: black;
+    color: white;
+}
+
+
+
+.btn_closemodal{
+    cursor: pointer;
+}
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(128, 128, 128, 0.5);
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+}
+
+#product_variant_div, #bin_item_div{
+    width: 40%;
+    height: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+#order_item_div, #return_item_div, #prodvariant_stocks_div{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+#slct_date_div{
+    width: 40%;
+    height: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.report_container{
+    max-height: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: auto;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.nav{
+    padding-top: 20px;
+}
+
+.nav_left{
+    padding-left: 50px;
+}
+
+.nav_right{
+    text-align: right;
+    padding-right: 50px;
+}
+
+.nav_btn{
+    margin: 3px;
+}
+
+.content_container{
+    padding: 40px;
+    padding-top: 30px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: white;
+    
+}
+
+.content_container_index{
+    padding: 40px;
+    padding-top: 30px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+h4{
+    font-weight: bold;
+}
+
+.category_list{
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.category_list li{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.all_products, .record_table{
+    overflow-x: auto;
+}
+
+.all_products table tr:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.bin_table tr:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.stocks_table tr:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.btn_login{
+    width: 50%;
+    border-radius: 50px;
+
+}
+
+.login_div{
+    width: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.login_div table tr td{
+    padding: 5px;
+}
+
+
+.login_txt{
+    font-size: 20px;
+}
+
+.btn{
+    background-color: rgb(64, 64, 64);
+    border-color: rgb(64, 64, 64);
+    color: white;
+    transition: 0.5s ease
+}
+
+
+
+
+@media (max-width: 750px){
+    #product_variant_div, #bin_item_div, .login_div{
+        width: 90%;
+    }
+
+    .nav{
+        padding: 0;
+        text-align: center;
+    }
+
+    #slct_date_div{
+        width:90%;
+    }
+
+    .sidenav{
+        width: 70%;
+    }
+
+    .login_txt{
+        font-size: 15px;
+    }
+
+}
